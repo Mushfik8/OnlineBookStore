@@ -1,0 +1,310 @@
+
+/* GENERAL PAGE DESIGN */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f2f4;
+    color: #333333;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #dfc5cf;
+    margin: 0;
+}
+
+/* 1. STATIC POSITION */
+.site-header {
+    position: static;
+    text-align: center;
+    padding: 25px 10px;
+    background-color: #54152d;
+    color: white;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 38px;
+    letter-spacing: 4px;
+}
+
+.tagline {
+    margin-bottom: 0;
+    font-style: italic;
+    color: #f4d8e2;
+}
+
+/* 2. STICKY POSITION */
+.navigation {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 3px 8px #00000018;
+}
+
+.navigation td {
+    text-align: center;
+    padding: 17px 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #54152d;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #d63384;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    padding: 45px 15px;
+}
+
+/* 3. RELATIVE POSITION */
+.form-card {
+    position: relative;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 45px 35px 35px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px #54152d20;
+    border-top: 5px solid #a52a55;
+}
+
+.form-card h2 {
+    position: relative;
+    top: 4px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #54152d;
+    font-size: 28px;
+}
+
+.form-description {
+    text-align: center;
+    color: #888888;
+    margin-bottom: 30px;
+}
+
+/* 4. ABSOLUTE POSITION */
+.role-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 16px;
+    background-color: #a52a55;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 0 9px 0 10px;
+}
+
+/* FORM TABLE */
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-table td {
+    padding: 12px 8px;
+    vertical-align: middle;
+}
+
+.form-table td:first-child {
+    width: 36%;
+    font-weight: bold;
+    color: #54152d;
+}
+
+.form-table tr:not(:last-child) {
+    border-bottom: 1px solid #f0e4e9;
+}
+
+/* INPUT FIELDS */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #d8c3cc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #fffafd;
+    color: #333333;
+    outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #a52a55;
+    box-shadow: 0 0 5px #a52a5533;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"] {
+    accent-color: #a52a55;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    max-width: 100%;
+    font-size: 13px;
+}
+
+/* BUTTONS */
+.button-cell {
+    text-align: center;
+    padding-top: 25px !important;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cancel-btn {
+    background-color: #eeeeee;
+    color: #333333;
+}
+
+.cancel-btn:hover {
+    background-color: #d5d5d5;
+}
+
+.register-btn {
+    background-color: #7c2144;
+    color: white;
+}
+
+.register-btn:hover {
+    background-color: #54152d;
+    transform: translateY(-2px);
+}
+
+/* LOGIN LINK */
+.login-link {
+    text-align: center;
+    padding-top: 20px !important;
+}
+
+.login-link a {
+    color: #a52a55;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+.site-footer {
+    text-align: center;
+    padding: 25px 10px;
+    background-color: #54152d;
+    color: white;
+}
+
+.site-footer h3 {
+    margin-top: 0;
+}
+
+.site-footer hr {
+    border-top-color: #936174;
+    margin: 20px 0;
+}
+
+/* 5. FIXED POSITION */
+.fixed-contact {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 200;
+    padding: 12px 16px;
+    background-color: #a52a55;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px #00000030;
+}
+
+.fixed-contact:hover {
+    background-color: #54152d;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 600px) {
+    .site-header h1 {
+        font-size: 28px;
+    }
+
+    .main-content {
+        padding: 25px 10px;
+    }
+
+    .form-card {
+        padding: 45px 12px 20px;
+    }
+
+    .form-card h2 {
+        font-size: 23px;
+    }
+
+    .form-table td {
+        padding: 10px 5px;
+    }
+
+    .form-table td:first-child {
+        width: 38%;
+        font-size: 13px;
+    }
+
+    .navigation td {
+        padding: 15px 5px;
+        font-size: 13px;
+    }
+
+    button {
+        padding: 10px 12px;
+    }
+
+    .fixed-contact {
+        right: 10px;
+        bottom: 10px;
+    }
+}

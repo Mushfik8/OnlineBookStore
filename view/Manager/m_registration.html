@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Manager Registration</title>
+    <link rel="stylesheet" href="m_registration.css">
+</head>
+
+<body id="top">
+
+    <header class="site-header">
+        <h1>YOUR CHOICE</h1>
+        <p class="tagline">Your Style, Your Fashion!</p>
+    </header>
+
+    <hr>
+
+    <table class="navigation">
+        <tr>
+            <td><a href="../Homepage/clothingstore.html">Home</a></td>
+            <td><a href="../Homepage/about.html">About Us</a></td>
+            <td><a href="../Homepage/contact.html">Contact Us</a></td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <main class="main-content">
+
+        <section class="form-card">
+
+            <span class="role-tag">MANAGER PANEL</span>
+
+            <h2>Manager Registration</h2>
+
+            <p class="form-description">
+                Register your manager account
+            </p>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+
+                <table class="form-table">
+
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td>
+                            <input type="text" id="name" name="name"
+                            placeholder="Enter your name" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="phone">Phone Number:</label></td>
+                        <td>
+                            <input type="tel" id="phone" name="phone"
+                            placeholder="Enter your number" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td>
+                            <input type="email" id="email" name="email"
+                            placeholder="Enter your email" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="dob">Date of Birth:</label></td>
+                        <td>
+                            <input type="date" id="dob" name="dob" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input type="radio" id="male" name="gender"
+                            value="Male" required>
+                            <label for="male">Male</label>
+
+                            <input type="radio" id="female" name="gender"
+                            value="Female">
+                            <label for="female">Female</label>
+
+                            <input type="radio" id="other" name="gender"
+                            value="Other">
+                            <label for="other">Other</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="nid">NID Number:</label></td>
+                        <td>
+                            <input type="text" id="nid" name="nid"
+                            placeholder="Enter your NID number" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="address">Address:</label></td>
+                        <td>
+                            <textarea id="address" name="address"
+                            rows="3" cols="30"
+                            placeholder="Enter your address"
+                            required></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="department">Department:</label></td>
+                        <td>
+                            <select id="department" name="department" required>
+                                <option value="">Select Department</option>
+                                <option value="Book Inventory">Book Inventory</option>
+                                <option value="Sales and Orders">Sales and Orders</option>
+                                <option value="Customer Service">Customer Service</option>
+                                <option value="Delivery Management">Delivery Management</option>
+                                <option value="Accounts and Finance">Accounts and Finance</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="joining_date">Joining Date:</label></td>
+                        <td>
+                            <input type="date" id="joining_date"
+                            name="joining_date" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="experience">Work Experience:</label>
+                        </td>
+                        <td>
+                            <textarea id="experience" name="experience"
+                            rows="3" cols="30"
+                            placeholder="Describe your experience"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="salary">Salary:</label></td>
+                        <td>
+                            <input type="number" id="salary" name="salary"
+                            placeholder="Enter your desired salary" min="0">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="picture">Picture:</label></td>
+                        <td>
+                            <input type="file" id="picture" name="picture"
+                            accept="image/*" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td>
+                            <input type="password" id="password"
+                            name="password"
+                            placeholder="Enter your password" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="confirm_password">
+                                Confirm Password:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="password" id="confirm_password"
+                            name="confirm_password"
+                            placeholder="Rewrite your password" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="button-cell">
+                            <button type="reset" class="cancel-btn">
+                                Cancel
+                            </button>
+
+                            <button type="submit" class="register-btn">
+                                Register Manager
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="login-link">
+                            Already have an account?
+                            <a href="../Login/login.html">Login</a>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <h3>Contact Information</h3>
+
+        <p>Email: your_choice@gmail.com</p>
+        <p>Phone: 01311317311</p>
+
+        <hr>
+
+        <p>Copyright &copy; 2026 YOUR CHOICE</p>
+
+    </footer>
+
+    <a href="#top" class="fixed-contact">↑ Back to Top</a>
+
+</body>
+</html>

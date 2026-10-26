@@ -1,0 +1,477 @@
+
+/* =====================================
+   GENERAL PAGE DESIGN
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f2f4;
+    color: #333333;
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   STATIC POSITION - HEADER
+===================================== */
+
+.site-header {
+    position: static;
+    text-align: center;
+    padding: 25px 10px;
+    background-color: #54152d;
+    color: white;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 38px;
+    letter-spacing: 3px;
+}
+
+.tagline {
+    margin: 5px 0 0;
+    font-style: italic;
+    color: #f4d8e2;
+    font-size: 15px;
+}
+
+
+/* =====================================
+   HORIZONTAL LINE
+===================================== */
+
+hr {
+    border: 0;
+    border-top: 1px solid #dfc5cf;
+    margin: 0;
+}
+
+
+/* =====================================
+   STICKY POSITION - NAVIGATION
+===================================== */
+
+.navigation {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 3px 8px #00000018;
+}
+
+.navigation table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.navigation td {
+    text-align: center;
+    padding: 16px 10px;
+}
+
+.navigation a {
+    display: inline-block;
+    text-decoration: none;
+    color: #54152d;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #d63384;
+}
+
+
+/* =====================================
+   MAIN CONTENT
+===================================== */
+
+.main-content {
+    padding: 45px 15px;
+    min-height: 500px;
+}
+
+
+/* =====================================
+   RELATIVE POSITION - FORM CARD
+===================================== */
+
+.form-card {
+    position: relative;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 45px 35px 35px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px #54152d20;
+    border-top: 5px solid #a52a55;
+}
+
+
+/* =====================================
+   ABSOLUTE POSITION - STAFF BADGE
+===================================== */
+
+.staff-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7px 16px;
+    background-color: #a52a55;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 0 9px 0 10px;
+}
+
+
+/* =====================================
+   FORM HEADING
+===================================== */
+
+.form-card h2 {
+    position: relative;
+    top: 4px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #54152d;
+    font-size: 28px;
+}
+
+.form-description {
+    text-align: center;
+    color: #888888;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+
+/* =====================================
+   REGISTRATION FORM TABLE
+===================================== */
+
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-table td {
+    padding: 12px 8px;
+    vertical-align: middle;
+}
+
+.form-table td:first-child {
+    width: 36%;
+    font-weight: bold;
+    color: #54152d;
+}
+
+.form-table tr:not(:last-child) {
+    border-bottom: 1px solid #f0e4e9;
+}
+
+
+/* =====================================
+   INPUT FIELDS AND TEXTAREA
+===================================== */
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #d8c3cc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: #fffafd;
+    color: #333333;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+/* Placeholder Color */
+
+input::placeholder {
+    color: #999999;
+}
+
+
+/* Focus Effect */
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #a52a55;
+    box-shadow: 0 0 5px #a52a5533;
+}
+
+
+/* Textarea Design */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* =====================================
+   RADIO BUTTON AND CHECKBOX
+===================================== */
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #a52a55;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 4px;
+    margin-left: 5px;
+}
+
+
+/* =====================================
+   FILE INPUT
+===================================== */
+
+input[type="file"] {
+    max-width: 100%;
+    font-size: 13px;
+}
+
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.button-cell {
+    text-align: center;
+    padding-top: 25px !important;
+    border-bottom: none !important;
+}
+
+button {
+    padding: 12px 24px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+/* Cancel Button */
+
+.cancel-btn {
+    background-color: #eeeeee;
+    color: #333333;
+}
+
+.cancel-btn:hover {
+    background-color: #d5d5d5;
+    transform: translateY(-2px);
+}
+
+
+/* Register Button */
+
+.register-btn {
+    background-color: #7c2144;
+    color: white;
+}
+
+.register-btn:hover {
+    background-color: #54152d;
+    transform: translateY(-2px);
+}
+
+
+/* =====================================
+   LOGIN LINK
+===================================== */
+
+.login-link {
+    text-align: center;
+    padding-top: 20px !important;
+    color: #666666;
+    border-bottom: none !important;
+}
+
+.login-link a {
+    color: #a52a55;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    color: #54152d;
+    text-decoration: underline;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.site-footer {
+    text-align: center;
+    padding: 25px 10px;
+    background-color: #54152d;
+    color: white;
+}
+
+.site-footer h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.site-footer hr {
+    border-top-color: #936174;
+    margin: 20px 0;
+}
+
+.site-footer p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #f4d8e2;
+}
+
+
+/* =====================================
+   FIXED POSITION - CONTACT BUTTON
+   Works if this element exists in HTML
+===================================== */
+
+.fixed-contact {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 200;
+    padding: 12px 16px;
+    background-color: #a52a55;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px #00000030;
+    transition: background-color 0.3s;
+}
+
+.fixed-contact:hover {
+    background-color: #54152d;
+}
+
+
+/* =====================================
+   SMALL SCREEN - RESPONSIVE DESIGN
+===================================== */
+
+@media screen and (max-width: 600px) {
+
+    .site-header {
+        padding: 20px 8px;
+    }
+
+    .site-header h1 {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    .tagline {
+        font-size: 13px;
+    }
+
+    .navigation td {
+        padding: 13px 4px;
+        font-size: 13px;
+    }
+
+    .main-content {
+        padding: 25px 10px;
+    }
+
+    .form-card {
+        padding: 45px 12px 20px;
+        border-radius: 10px;
+    }
+
+    .form-card h2 {
+        font-size: 22px;
+    }
+
+    .form-description {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .form-table td {
+        padding: 10px 5px;
+    }
+
+    .form-table td:first-child {
+        width: 38%;
+        font-size: 12px;
+    }
+
+    .form-table td:last-child {
+        font-size: 13px;
+    }
+
+    .form-table input,
+    .form-table select,
+    .form-table textarea {
+        max-width: 100%;
+        font-size: 12px;
+    }
+
+    input[type="radio"] {
+        margin-left: 2px;
+    }
+
+    .staff-tag {
+        padding: 6px 10px;
+        font-size: 9px;
+    }
+
+    button {
+        padding: 10px 13px;
+        font-size: 12px;
+    }
+
+    .login-link {
+        font-size: 12px;
+    }
+
+    .site-footer {
+        padding: 20px 8px;
+    }
+
+    .fixed-contact {
+        right: 10px;
+        bottom: 10px;
+    }
+}
+body {
+    background-color: red !important;
+}

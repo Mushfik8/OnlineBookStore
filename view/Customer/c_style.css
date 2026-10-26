@@ -1,0 +1,178 @@
+
+body {
+    margin: 0; 
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.site-header {
+    position: static;
+    text-align: center;
+    padding: 25px 10px;
+    background-color: rgb(78, 8, 21);
+    color: white; 
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 38px; 
+    letter-spacing: 4px;
+    
+    
+}
+
+.tagline {
+    margin-bottom: 0;
+    font-style: italic;
+    color: #f4d8e2;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #dfc5cf;
+    margin: 0;
+}
+
+.navigation {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 5px 5px black;
+}
+
+.navigation td {
+    text-align: center;
+    padding: 17px 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #54152d;
+    font-weight: bold;
+   
+}
+
+
+
+.main-content {
+    padding: 45px 15px;
+}
+
+.form-card {
+    position: relative;
+    max-width: 720px;
+    margin: 0px auto;
+    padding: 45px 35px 35px;
+    background-color: rgb(255, 253, 253);
+    border-radius: 14px;
+    box-shadow: 0 8px 25px black;
+    border-top: 5px solid rgb(57, 42, 42)
+    ;
+}
+
+.form-card h2 {
+    position: relative;
+    top: 4px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #54152d;
+    font-size: 28px;
+}
+
+.form-description {
+    text-align: center;
+    color: #888888;
+    margin-bottom: 30px;
+}
+
+.form-table {
+    width: 100%;   
+}
+
+.form-table td {
+    padding: 12px 8px;
+    vertical-align: middle;
+}
+
+.form-table td:first-child {
+    width: 36%;
+    font-weight: bold;
+    color: #54152d;
+}
+
+.form-table tr:not(:last-child) {
+    border-bottom: 1px solid #f0e4e9;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #d8c3cc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background-color: white;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #784557;
+    box-shadow:   #a52a5533;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.button-cell {
+    text-align: center;
+    padding-top: 25px;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  
+}
+
+.cancel-btn {
+    background-color: #eeeeee;
+    color: #333333;
+}
+
+.register-btn {
+    background-color: #7c2144;
+    color: white;
+}
+
+
+.login-link {
+    text-align: center;
+    padding-top: 25px ;
+}
+
+.login-link a {
+    color: #a52a55;
+    font-weight: bold;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 25px 10px;
+    background-color: #54152d;
+    color: white;
+}

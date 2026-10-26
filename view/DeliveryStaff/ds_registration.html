@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Deliveryman Registration</title>
+
+    
+<link rel="stylesheet" href="../Admin/a_registration.css"></head>
+
+
+<body>
+
+    
+    <header class="site-header">
+        <h1>Online Clothing Store</h1>
+        <p class="tagline">Your Trusted Delivery Partner</p>
+    </header>
+
+    
+    <nav class="navigation">
+        <table width="100%">
+            <tr>
+                <td><a href="home.html">Home</a></td>
+                <td><a href="about.html">About</a></td>
+                <td><a href="contact.html">Contact Us</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <main class="main-content">
+
+        <div class="form-card">
+
+            <span class="staff-tag">DELIVERY STAFF</span>
+
+            <h2>Deliveryman Registration</h2>
+
+            <p class="form-description">
+                Register to join our delivery team.
+            </p>
+
+            <form>
+
+                <table class="form-table">
+
+                    <tr>
+                        <td>Name:</td>
+                        <td>
+                            <input type="text"
+                                   name="name"
+                                   placeholder="Enter your name"
+                                   required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone Number:</td>
+                        <td>
+                            <input type="tel"
+                                   name="phone"
+                                   placeholder="Enter your number"
+                                   required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Date of Birth:</td>
+                        <td>
+                            <input type="date"
+                                   name="dob"
+                                   required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input type="radio" name="gender"
+                                   value="Male" required> Male
+
+                            <input type="radio" name="gender"
+                                   value="Female"> Female
+
+                            <input type="radio" name="gender"
+                                   value="Other"> Other
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>NID Number:</td>
+                        <td>
+                            <input type="text"
+                                   name="nid"
+                                   placeholder="Enter your NID number"
+                                   required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Vehicle Type:</td>
+                        <td>
+                            <select name="vehicle" required>
+                                <option value="">Select Vehicle</option>
+                                <option value="Bicycle">Bicycle</option>
+                                <option value="Motorcycle">Motorcycle</option>
+                                <option value="Electric Bike">Electric Bike</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Assigned Area:</td>
+                        <td>
+                            <select name="area" required>
+                                <option value="">Select Area</option>
+                                <option value="Dhaka">Dhaka</option>
+                                <option value="Dinajpur">Dinajpur</option>
+                                <option value="Brahmanbaria">Brahmanbaria</option>
+                                <option value="Gazipur">Gazipur</option>
+                                <option value="Chattogram">Chattogram</option>
+                                <option value="Sylhet">Sylhet</option>
+                                <option value="Rajshahi">Rajshahi</option>
+                                <option value="Comilla">Comilla</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Availability:</td>
+                        <td>
+                            <input type="radio" name="availability"
+                                   value="Full-time" required> Full-time
+
+                            <input type="radio" name="availability"
+                                   value="Part-time"> Part-time
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Password:</td>
+                        <td>
+                            <input type="password"
+                                   name="password"
+                                   placeholder="Enter password"
+                                   required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Confirm Password:</td>
+                        <td>
+                            <input type="password"
+                                   name="confirm_password"
+                                   placeholder="Rewrite your password"
+                                   required>
+                        </td>
+                    </tr>
+
+                    <!-- Buttons -->
+                    <tr>
+                        <td colspan="2" class="button-cell">
+                            <button type="reset" class="cancel-btn">
+                                Cancel
+                            </button>
+
+                            <button type="submit" class="register-btn">
+                                Register
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="login-link">
+                            Already have an account?
+                            <a href="ds_login.html">Login here</a>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    
+    <footer class="site-footer">
+        <h3>Online Clothing Store</h3>
+        <hr>
+        <p>Copyright &copy; 2026 Online Clothing Store</p>
+    </footer>
+
+</body>
+</html>
